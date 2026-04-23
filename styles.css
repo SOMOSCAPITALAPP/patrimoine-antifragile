@@ -342,9 +342,21 @@ textarea {
   gap: 22px;
 }
 
+.seo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
 .criteria-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.score-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 18px;
 }
 
@@ -364,6 +376,27 @@ textarea {
   border: 1px solid var(--line);
   border-radius: 22px;
   background: rgba(255, 255, 255, 0.03);
+}
+
+.seo-card,
+.score-card {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.score-badge {
+  display: inline-flex;
+  margin-bottom: 12px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(115, 216, 255, 0.08);
+  color: var(--cyan);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .metric-row {
@@ -666,6 +699,8 @@ textarea:focus {
   .value-grid,
   .signature-grid,
   .library-grid,
+  .seo-grid,
+  .score-grid,
   .criteria-grid,
   .data-grid,
   .resource-grid {
@@ -707,6 +742,8 @@ textarea:focus {
   .value-grid,
   .signature-grid,
   .library-grid,
+  .seo-grid,
+  .score-grid,
   .criteria-grid,
   .data-grid,
   .resource-grid,
