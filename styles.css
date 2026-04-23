@@ -336,6 +336,36 @@ textarea {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.library-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.criteria-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.manifesto-card {
+  padding: 28px;
+}
+
+.library-card {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.criteria-card {
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
 .metric-row {
   margin-top: 34px;
 }
@@ -635,6 +665,8 @@ textarea:focus {
   .strategy-grid,
   .value-grid,
   .signature-grid,
+  .library-grid,
+  .criteria-grid,
   .data-grid,
   .resource-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -674,6 +706,8 @@ textarea:focus {
   .strategy-grid,
   .value-grid,
   .signature-grid,
+  .library-grid,
+  .criteria-grid,
   .data-grid,
   .resource-grid,
   .site-footer {
