@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap"
     rel="stylesheet"
   >
   <link rel="stylesheet" href="styles.css">
@@ -41,6 +41,7 @@
         <a class="nav-link" href="a-propos.html">A propos</a>
         <a class="nav-link" href="philosophie.html">Philosophie</a>
         <a class="nav-link" href="strategie.html">Strategie</a>
+        <a class="nav-link" href="plateforme-utilisee.html">Plateforme</a>
         <a class="nav-link" href="pinko777.html">Pinko777</a>
         <a class="nav-link active" href="ressources.html">Ressources</a>
       </nav>
@@ -66,7 +67,14 @@
             Un lead magnet simple a brancher plus tard a une solution email.
             Il permet d'introduire la these, les erreurs a eviter et les bases du cadre mental.
           </p>
-          <form class="resource-form">
+          <form
+            class="resource-form"
+            action="https://formsubmit.co/change-me@patrimoine-antifragile.com"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="Nouveau contact - Patrimoine Antifragile">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
             <label>
               <span>Votre prenom</span>
               <input type="text" name="firstName" placeholder="Camille">
@@ -75,9 +83,14 @@
               <span>Votre email</span>
               <input type="email" name="email" placeholder="camille@email.com">
             </label>
+            <label>
+              <span>Votre objectif</span>
+              <textarea name="message" placeholder="Je veux comprendre l'approche antifragile et recevoir le guide."></textarea>
+            </label>
             <button class="button button-primary" type="submit">Recevoir le guide</button>
             <p class="guide-note">
-              Contenu informatif. Pas de promesse de gain. Investir comporte des risques.
+              Le formulaire est deja branche pour une integration statique compatible GitHub Pages.
+              Il suffit maintenant de remplacer l'adresse de reception dans l'attribut `action`.
             </p>
           </form>
         </article>
@@ -133,6 +146,7 @@
         <a href="a-propos.html">A propos</a>
         <a href="philosophie.html">Philosophie</a>
         <a href="strategie.html">Strategie</a>
+        <a href="plateforme-utilisee.html">Plateforme</a>
         <a href="pinko777.html">Pinko777</a>
       </div>
     </footer>

@@ -244,7 +244,7 @@ h1,
 h2,
 h3 {
   margin: 0;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   letter-spacing: -0.04em;
 }
 
@@ -290,6 +290,42 @@ textarea {
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 28px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 10px 14px;
+  margin: 0 0 18px;
+  border: 1px solid rgba(115, 216, 255, 0.18);
+  border-radius: 999px;
+  background: rgba(115, 216, 255, 0.08);
+  color: var(--text);
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.hero-band {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 26px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(8, 21, 37, 0.72), rgba(16, 40, 70, 0.42));
+}
+
+.hero-band-label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--cyan);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
 .metric-row,
@@ -376,6 +412,17 @@ textarea {
 
 .text-link:hover {
   text-decoration: underline;
+}
+
+.feature-card h3,
+.premium-tile h3,
+.timeline-panel h2,
+.cta-panel h2,
+.story-card h2,
+.resource-card h2,
+.profile-card h2,
+.panel h2 {
+  letter-spacing: -0.03em;
 }
 
 .split-block,
@@ -579,6 +626,10 @@ textarea:focus {
     grid-template-columns: 1fr;
   }
 
+  .hero-band {
+    grid-template-columns: 1fr;
+  }
+
   .metric-row,
   .feature-grid,
   .strategy-grid,
@@ -612,6 +663,10 @@ textarea:focus {
 
   h1 {
     font-size: clamp(2.6rem, 16vw, 4rem);
+  }
+
+  .hero-badge {
+    width: 100%;
   }
 
   .metric-row,
